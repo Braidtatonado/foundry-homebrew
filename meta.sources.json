@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "sources": [
+      {
+        "json": "dragonforged",
+        "full": "Dragonforged",
+        "abbreviation": "DF",
+        "authors": ["xSHIGUYx (Reddit)", "Transcribed by Grok"],
+        "convertedBy": ["Grok for Foundry VTT"],
+        "url": "",
+        "version": "1.0",
+        "color": "#8B0000",
+        "category": "homebrew"
+      }
+    ]
+  }
+}
