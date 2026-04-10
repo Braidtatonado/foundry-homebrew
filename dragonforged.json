@@ -1,0 +1,81 @@
+{
+  "json": "dragonforged",
+  "name": "Dragonforged",
+  "source": "DF",
+  "page": 1,
+  "type": "race",
+  "system": {
+    "description": {
+      "value": "<p>The warforged were built to fight in the Last War. While the first warforged were mindless automatons, there were countless improvements made to their design that ultimately culminated in sentience. The dragonforged are a new production line of warforged, borne out of the need for stronger soldiers. Regular warforged are already created with a blend of organic and inorganic materials; dragonforged simply have the addition of dragonscales to their recipe. In addition, dragonforged design sees a larger focus on the inclusion of metal plating.</p>",
+      "chat": "Dragonforged: Enhanced warforged with dragonscales and heavy metal plating."
+    },
+    "abilities": {
+      "con": { "value": 2 },
+      "cha": { "value": 1 }
+    },
+    "size": "med",
+    "movement": { "walk": 25 },
+    "senses": { "darkvision": 60 },
+    "age": "A typical warforged is between two and thirty years old; however the dragonforged line is much younger, averaging around 6 months. The maximum warforged lifespan remains a mystery; so far, warforged have shown no signs of deterioration due to age. You are immune to magical aging effects.",
+    "alignment": "Most warforged take comfort in order and discipline, tending toward law and neutrality. Dragonforged, inspired by dragonborn, often lean toward extremes and are usually lawful in nature but never neutral.",
+    "languages": {
+      "value": ["common"],
+      "special": "You can speak, read, and write Common and Draconic."
+    }
+  },
+  "items": [
+    {
+      "name": "Constructed Resilience",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>You were created to have remarkable fortitude, represented by the following benefits:</p><ul><li>Advantage on saving throws against being poisoned, and you have resistance to poison damage.</li><li>You don't need to eat, drink, or breathe.</li><li>You are immune to disease.</li><li>You don't need to sleep, and magic can't put you to sleep.</li></ul>"
+        }
+      }
+    },
+    {
+      "name": "Sentry's Rest",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>When you take a long rest, you must spend six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you unconscious, and you can see and hear as normal.</p>"
+        }
+      }
+    },
+    {
+      "name": "Integrated Protection",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>Your body has built-in defensive layers, which can be enhanced with armor:</p><ul><li>You have resistance to slashing damage.</li><li>You can don only armor with which you have proficiency. To don or doff armor takes 1 hour while remaining in contact with it. You can rest while donning or doffing armor in this way.</li><li>While you live, your armor can't be removed from your body against your will.</li></ul>"
+        }
+      }
+    },
+    {
+      "name": "Night-Sight",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>Designed to be superior to the dragonborn you are modeled after, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>"
+        }
+      }
+    },
+    {
+      "name": "Breath Weapon (Metal Shards)",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>When you use your action to exhale, each creature in a 15-foot cone must make a Dexterity saving throw (DC = 8 + your Constitution modifier + your proficiency bonus). A creature takes 2d8 slashing damage on a failed save, or half as much on a success. The damage increases to 3d8 at 6th level, 4d8 at 11th level, and 5d8 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest.</p><p><strong>Damage Type:</strong> Slashing<br><strong>Area:</strong> 15 ft. cone</p>"
+        },
+        "activation": { "type": "action", "cost": 1 },
+        "damage": { "parts": [["2d8", "slashing"]] },
+        "save": { "ability": "dex" },
+        "range": { "value": 15, "units": "ft", "type": "cone" },
+        "uses": { "per": "sr", "max": 1 }
+      }
+    }
+  ],
+  "flags": {
+    "dnd5e": { "homebrew": true }
+  }
+}
